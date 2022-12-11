@@ -17,8 +17,8 @@ class HomePage extends StatelessWidget {
         leading: Builder(
           builder: (context) => IconButton(
             iconSize: 30,
-            padding: EdgeInsets.all(20),
-            icon: Icon(
+            padding: const EdgeInsets.all(20),
+            icon: const Icon(
               Icons.help,
               color: Colors.blueGrey,
             ),
@@ -30,7 +30,7 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.transparent,
         shadowColor: Colors.transparent,
       ),
-      drawer: HomeDrawer(),
+      drawer: const HomeDrawer(),
       body: Column(
         children: [
           Padding(
@@ -39,7 +39,7 @@ class HomePage extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Center(
+                const Center(
                   child: Text(
                     "How is your\nhealth today?",
                     textAlign: TextAlign.center,
@@ -50,20 +50,20 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Row(
-                  children: [
-                    Expanded(
+                  children: const [
+                     Expanded(
                         child: CalculateButtonNavHome(
                       route: 'bmi',
                       title: 'Body Mass Index',
                     )),
-                    SizedBox(
+                     SizedBox(
                       width: 15,
                     ),
-                    Expanded(
+                     Expanded(
                       child: CalculateButtonNavHome(
                         route: 'bmr',
                         title: 'Basal Metabolic Rate',
@@ -71,20 +71,20 @@ class HomePage extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
-                CalculateButtonNavHome(
+                const CalculateButtonNavHome(
                   route: 'rhr',
                   title: 'Rest Heartbeat (RHR)',
                 ),
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 40,
           ),
-          Text(
+          const Text(
             "Top Health Headlines\nIndonesia",
             textAlign: TextAlign.center,
             style: TextStyle(
@@ -93,7 +93,7 @@ class HomePage extends StatelessWidget {
               letterSpacing: 0.7,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 13,
           ),
           FutureBuilder(
@@ -125,7 +125,7 @@ class HomePage extends StatelessWidget {
                               height: 100,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(20),
-                                gradient: LinearGradient(
+                                gradient: const LinearGradient(
                                   colors: [Colors.black, Colors.transparent],
                                   begin: Alignment.bottomCenter,
                                   end: Alignment.topCenter,
@@ -136,7 +136,7 @@ class HomePage extends StatelessWidget {
                               padding: const EdgeInsets.all(10),
                               child: Text(
                                 snapshot.data![index].title!,
-                                style: TextStyle(
+                                style: const TextStyle(
                                   color: Colors.white,
                                 ),
                               ),
@@ -159,7 +159,7 @@ class HomePage extends StatelessWidget {
                   child: Container(
                     height: 300,
                     width: 200,
-                    child: Center(
+                    child: const Center(
                       child: CircularProgressIndicator(
                         color: Colors.blueGrey,
                       ),
@@ -192,7 +192,7 @@ class CalculateButtonNavHome extends StatelessWidget {
       }),
       child: Container(
         height: 100,
-        padding: EdgeInsets.all(8),
+        padding: const EdgeInsets.all(8),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
           color: Colors.blueGrey.withOpacity(0.8),
@@ -201,7 +201,7 @@ class CalculateButtonNavHome extends StatelessWidget {
           child: Text(
             title,
             textAlign: TextAlign.center,
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.w600,
               color: Colors.white,

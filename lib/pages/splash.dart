@@ -14,8 +14,8 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   int _selectedIndex = 0;
   List pages = [
-    HomePage(),
-    NewsPage(),
+    const HomePage(),
+    const NewsPage(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -27,7 +27,7 @@ class _SplashScreenState extends State<SplashScreen> {
         onPressed: () {
           Navigator.pushNamed(context, 'calculate');
         },
-        child: Icon(Icons.calculate),
+        child: const Icon(Icons.calculate),
       ),
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Colors.blueGrey,
@@ -38,7 +38,7 @@ class _SplashScreenState extends State<SplashScreen> {
           _selectedIndex = i;
           setState(() {});
         },
-        items: [
+        items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: "",

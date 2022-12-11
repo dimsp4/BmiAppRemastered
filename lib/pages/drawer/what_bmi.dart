@@ -6,9 +6,10 @@ class WhatBmi extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.blueGrey,
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.transparent,
+        shadowColor: Colors.transparent,
         centerTitle: true,
         title: Text("What is BMI?"),
       ),
@@ -27,6 +28,7 @@ class WhatBmi extends StatelessWidget {
             ),
             Text(
               'Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women',
+              style: TextStyle(color: Colors.white),
             )
           ],
         ),

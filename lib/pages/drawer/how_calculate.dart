@@ -6,9 +6,10 @@ class HowCalculate extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.blueGrey,
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.transparent,
+        shadowColor: Colors.transparent,
         centerTitle: true,
         title: Text("How to calculate BMI?"),
       ),
@@ -28,6 +29,7 @@ class HowCalculate extends StatelessWidget {
             Text(
               'The formula is:\nBMI = kg / (m x m)\nwhere kg is a person’s weight in kilograms and m is their height in metres squared.',
               textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.white,),
             )
           ],
         ),

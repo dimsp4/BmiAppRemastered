@@ -6,9 +6,10 @@ class HowResult extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.blueGrey,
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.transparent,
+        shadowColor: Colors.transparent,
         centerTitle: true,
         title: Text("How to get result by gender?"),
       ),
@@ -27,7 +28,11 @@ class HowResult extends StatelessWidget {
                   width: 10,
                 ),
                 Text(
-                    "Underweight = <18.5\nNormal weight = 18.5–24.9\nOverweight = 25–29.9\nObesity = BMI of 30 or greater"),
+                  "Underweight = <18.5\nNormal weight = 18.5–24.9\nOverweight = 25–29.9\nObesity = BMI of 30 or greater",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
               ],
             ),
             Row(
@@ -41,7 +46,11 @@ class HowResult extends StatelessWidget {
                   width: 10,
                 ),
                 Text(
-                    "Underweight = <18.5\nNormal weight = 18.6-25.0\nOverweight = 25.1–27\nObesity = BMI of 28 or greater"),
+                  "Underweight = <18.5\nNormal weight = 18.6-25.0\nOverweight = 25.1–27\nObesity = BMI of 28 or greater",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
               ],
             ),
           ],

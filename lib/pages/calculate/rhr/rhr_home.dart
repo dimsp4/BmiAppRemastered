@@ -13,7 +13,7 @@ class RhrPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 246, 246, 246),
       appBar: AppBar(
-        foregroundColor: Colors.black54,
+        foregroundColor: Colors.blueGrey,
         backgroundColor: Colors.transparent,
         shadowColor: Colors.transparent,
       ),

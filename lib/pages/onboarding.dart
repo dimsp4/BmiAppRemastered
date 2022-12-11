@@ -1,9 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:introduction_screen/introduction_screen.dart';
-import 'package:lottie/lottie.dart';
-import 'package:onboarding/onboarding.dart';
 
 class OnBoardingPages extends StatelessWidget {
   const OnBoardingPages({Key? key}) : super(key: key);
@@ -11,7 +6,7 @@ class OnBoardingPages extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         gradient: LinearGradient(
           colors: [
             Colors.blueGrey,
@@ -41,10 +36,10 @@ class OnBoardingPages extends StatelessWidget {
                     Image.asset(
                       "assets/images/64671-removebg-preview.png",
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
-                    Text(
+                    const Text(
                       "U-Body",
                       style: TextStyle(
                         fontWeight: FontWeight.w800,
@@ -52,10 +47,10 @@ class OnBoardingPages extends StatelessWidget {
                         letterSpacing: 3,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 5,
                     ),
-                    Text(
+                    const Text(
                       "U-Body is a mobile application that can makes your body healtier by knowing your body information with BMI, BMR, and RHR calculation.",
                       textAlign: TextAlign.center,
                       style: TextStyle(
@@ -65,7 +60,7 @@ class OnBoardingPages extends StatelessWidget {
                         color: Colors.black38,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 150,
                     )
                   ],
@@ -87,7 +82,7 @@ class OnBoardingPages extends StatelessWidget {
                         ),
                       ),
                       padding: MaterialStateProperty.all(
-                        EdgeInsets.symmetric(vertical: 20),
+                        const EdgeInsets.symmetric(vertical: 20),
                       ),
                       backgroundColor: MaterialStateProperty.all(
                         Colors.transparent,
@@ -99,7 +94,7 @@ class OnBoardingPages extends StatelessWidget {
                         Colors.blueGrey,
                       ),
                     ),
-                    child: Text(
+                    child: const Text(
                       "Get Started",
                       style: TextStyle(
                         fontSize: 25,
